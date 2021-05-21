@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/currentSong"
+        android:icon="@drawable/ic_music1"
+        android:title="Bài hát đang nghe"/>
+    <item android:id="@+id/listSong"
+        android:icon="@drawable/ic_list_play"
+        android:title="Danh sách"/>
+</menu>

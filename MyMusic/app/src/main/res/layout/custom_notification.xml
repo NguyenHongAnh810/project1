@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:padding="5dp">
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:orientation="horizontal"
+       android:layout_alignParentStart="true">
+       <ImageView
+           android:id="@+id/imgLarge"
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:adjustViewBounds="true"
+           android:src="@drawable/anh_danh_dan"
+          />
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <TextView
+               android:layout_marginStart="10dp"
+               android:id="@+id/nameSongNotification"
+               android:textStyle="bold"
+               android:textColor="@color/black"
+               android:layout_width="120dp"
+               android:layout_height="wrap_content"
+               android:textSize="16sp"/>
+           <TextView
+               android:layout_marginStart="10dp"
+               android:id="@+id/nameArtistNotification"
+               android:textColor="@color/black"
+               android:layout_width="120dp"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"/>
+       </LinearLayout>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:gravity="end|center">
+        <ImageView
+            android:id="@+id/prevNotification"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_previous_black" />
+
+        <ImageView
+            android:id="@+id/playNotification"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_play_no_circle_black" />
+
+        <ImageView
+            android:id="@+id/nextNotification"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_next_black" />
+    </LinearLayout>
+
+</RelativeLayout>

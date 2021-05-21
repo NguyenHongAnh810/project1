@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/currentSong">
+
+    <fragment
+        android:id="@+id/currentSong"
+        android:name="com.example.mymusic.Fragments.CurrentSongFragment"
+        android:label="Bài hát đang phát"
+        tools:layout="@layout/current_song_fragment">
+    </fragment>
+    <fragment
+        android:id="@+id/listSong"
+        android:name="com.example.mymusic.Fragments.ListSongFragment"
+        android:label="Danh sách bài hát"
+        tools:layout="@layout/fragment_list_song">
+    </fragment>
+</navigation>
